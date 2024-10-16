@@ -1,122 +1,427 @@
-print('Ejercicio 22\n')
+print('\nEjercicio 1\n')
 nombre = "Mane"
 print(nombre)
 
 # 2
-print('Ejercicio 2\n')
+print('\nEjercicio 2\n')
 edad = 19
 print(edad)
 
 # 3
-print('Ejercicio 3\n')
+print('\nEjercicio 3\n')
 if edad > 18:
     print("Eres mayor de edad.")
 
 
 # 4
-print('Ejercicio 4\n')
+print('\nEjercicio 4\n')
 if edad == 18:
     print("Tienes 18 años.")
+else: 
+    print(f'No tienes 18 años, tienes {edad}')
 
 # 5
-print('Ejercicio 5\n')
+print('\nEjercicio 5\n')
 lista_numeros = [1, 2, 3, 4, 5]
 print(lista_numeros)
 
 # 6
-print('Ejercicio 6\n')
+print('\nEjercicio 6\n')
 suma = sum(lista_numeros)
 print(suma)
 
 # 7
-print('Ejercicio 7\n')
+print('\nEjercicio 7\n')
 info_personal = {"nombre": nombre, "edad": edad}
 print(info_personal)
 
 # 8
-print('Ejercicio 8\n')
+print('\nEjercicio 8\n')
 print(info_personal["nombre"])
 
 # 9
-print('Ejercicio 9\n')
+print('\nEjercicio 9\n')
 for i in range(1, 11):
-    print(i, end=', ')
+    print(i, end=' ')
+
 
 # 10
-print('Ejercicio 10\n')
+print('\n\nEjercicio 10\n')
 for i in range(1, 11):
     if i % 2 == 0:
-        print(i, end=', ')
+        print(i, end=' ')
 
 # 11
-print('Ejercicio 11\n')
+print('\n\nEjercicio 11\n')
 frutas = ["manzana", "pera", "aguacate", "banana"]
 for fruta in frutas:
     if fruta.startswith('a'):
         print(fruta)
 
 # 12
-print('Ejercicio 12\n')
+print('\nEjercicio 12\n')
 for index, fruta in enumerate(frutas):
-    print(f"{index}: {fruta}")
+    print(f'{index} {fruta}')
 
 # 13
-print('Ejercicio 13\n')
+print('\nEjercicio 13\n')
 conjunto_numeros = {1, 2, 3, 4, 5}
 print(conjunto_numeros)
 
 # 14
-print('Ejercicio 14\n')
+print('\nEjercicio 14\n')
 if 3 in conjunto_numeros:
     print("3 está en el conjunto.")
 
 # 15
-print('Ejercicio 15\n')
+print('vEjercicio 15\n')
 for i in range(10, 0, -1):
     print(i, end=', ')
 
 # 16
-print('Ejercicio 16\n')
+print('\nEjercicio 16\n')
 def suma(a, b):
     return a + b
 
 print(suma(3, 5))
 
 # 17
-print('Ejercicio 17\n')
+print('\nEjercicio 17\n')
 def longitud(lista):
     return len(lista)
 
 print(longitud([1, 2, 3]))
 
 # 18
-print('Ejercicio 18\n')
+print('\nEjercicio 18\n')
 def es_par(num):
     return num % 2 == 0
 
 print(es_par(4))
 
 # 19
-print('Ejercicio 19\n')
+print('\nEjercicio 19\n')
 def obtener_claves(diccionario):
     return list(diccionario.keys())
 
 print(obtener_claves({"a": 1, "b": 2}))
 
 # 20
-print('Ejercicio 20\n')
+print('\nEjercicio 20\n')
 numeros = [1, 2, 3, 4, 5, 6]
 mayores_que_5 = [num for num in numeros if num > 5]
 print(mayores_que_5)
 
 # 21
-print('Ejercicio 21\n')
+print('\nEjercicio 21\n')
 palabras = ["hola", "mundo", "python"]
 longitud_total = sum(len(palabra) for palabra in palabras)
 print(longitud_total)
 
 # 22
-print('Ejercicio 22\n')
+print('\nEjercicio 22\n')
 elementos = ["a", "b", "a", "c"]
 print(elementos.count("a"))
+
+
+# 23
+print('\nEjercicio 23\n')
+numeros = [1, 2, 3, 4, 5]
+promedio = sum(numeros) / len(numeros)
+print(promedio)
+
+# 24
+print('\nEjercicio 24\n')
+mi_diccionario = {"nombre": "Juan"}
+mi_diccionario["edad"] = 30
+print(mi_diccionario)
+
+# 25
+print('\nEjercicio 25\n')
+del mi_diccionario["edad"]
+print(mi_diccionario)
+
+# 26
+print('\nEjercicio 26\n')
+for i in range(1, 6):
+    print(i ** 2, end=', ')
+
+# 27
+print('\nEjercicio 27\n')
+fibonacci = [0, 1]
+for i in range(2, 10):
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
+print(fibonacci)
+
+# 28
+print('\nEjercicio 28\n')
+numeros = [1, 2, 3, 4, 5]
+if 3 in numeros:
+    print("3 está en la lista.")
+
+# 29
+print('\nEjercicio 29\n')
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+# 30
+print('\nEjercicio 30\n')
+def es_primo(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(es_primo(7))
+
+# 31
+print('\nEjercicio 31\n')
+for i in range(1, 21):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+# 32
+print('\nEjercicio 32\n')
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+# 33
+print('\nEjercicio 33\n')
+numeros = [1, 2, 3, 4, 5]
+resultado = []
+for x in numeros:
+    resultado.append(x * 2)
+print(resultado)
+
+# 34
+print('\nEjercicio 34\n')
+numeros = [1, 2, 3, 4, 5, 6]
+resultado = []
+for x in numeros:
+    if x % 2 == 0:
+        resultado.append(x)
+print(resultado)
+
+
+# 35
+print('\nEjercicio 35\n')
+palabras = ["Hola", "mundo"]
+resultado = " ".join(palabras)
+print(resultado)
+
+# 36
+print('\nEjercicio 36\n')
+numeros = [1, -2, 3, -4, 5]
+negativos = [num for num in numeros if num < 0]
+print(negativos)
+
+# 37
+print('\nEjercicio 37\n')
+conjunto1 = {'a', 'b', 'c'}
+conjunto2 = {'c', 'd', 'e'}
+union = conjunto1.union(conjunto2)
+print(union)
+
+# 38
+print('\nEjercicio 38\n')
+conjunto1 = {1, 2, 3}
+conjunto2 = {2, 3, 4}
+interseccion = conjunto1.intersection(conjunto2)
+print(interseccion)
+
+# 39
+print('\nEjercicio 39\n')
+mi_diccionario = {"a": 1, "b": 2}
+for clave, valor in mi_diccionario.items():
+    print(f"{clave}: {valor}")
+
+# 40
+print('\nEjercicio 40\n')
+def contar_vocales(texto):
+    return sum(1 for char in texto.lower() if char in "aeiou")
+
+print(contar_vocales("Hola"))
+
+# 41
+print('\nEjercicio 41\n')
+from random import randint
+numeros_aleatorios = [randint(1, 100) for _ in range(10)]
+print(numeros_aleatorios)
+
+# 42
+print('\nEjercicio 42\n')
+numeros = [5, 3, 1, 4, 2]
+numeros.sort()
+print(numeros)
+
+# 43
+print('\nEjercicio 43\n')
+mi_diccionario = {"a": 1, "b": 2}
+if "a" in mi_diccionario:
+    print("La clave 'a' existe.")
+
+# 44
+print('\nEjercicio 44\n')
+lista = [1, 2, 3]
+for elemento in reversed(lista):
+    print(elemento, end=', ')
+
+# 45
+print('\nEjercicio 45\n')
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+# 46
+print('\nEjercicio 46\n')
+tuplas = [(1, 'a'), (2, 'b')]
+for t in tuplas:
+    print(f"{t[0]}: {t[1]}")
+
+# 47
+print('\nEjercicio 47\n')
+lista1 = [1, 2, 3]
+lista2 = ['a', 'b', 'c']
+resultado = list(zip(lista1, lista2))
+print(resultado)
+
+# 48
+print('\nEjercicio 48\n')
+def convertir_mayusculas(texto):
+    return texto.upper()
+
+print(convertir_mayusculas("hola"))
+
+# 49
+print('\nEjercicio 49\n')
+numeros = [1, -2, 3, -4, 5]
+suma_negativos = sum(num for num in numeros if num < 0)
+print(suma_negativos)
+
+# 50
+print('\nEjercicio 50\n')
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print(f"**{i}**")
+    else:
+        print(i)
+
+# 51
+print('\nEjercicio 51\n')
+nombres = ["Juan", "Alejandro", "Maria"]
+contar_mas_de_5 = sum(1 for nombre in nombres if len(nombre) > 5)
+print(contar_mas_de_5)
+
+# 52
+print('\nEjercicio 52\n')
+for i in range(1, 6):
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
+
+# 53
+print('\nEjercicio 53\n')
+def invertir_lista(lista):
+    return lista[::-1]
+
+print(invertir_lista([1, 2, 3]))
+
+# 54
+print('\nEjercicio 54\n')
+suma_pares = sum(i for i in range(1, 101) if i % 2 == 0)
+print(suma_pares)
+
+# 55
+print('\nEjercicio 55\n')
+mi_diccionario = {"a": 5, "b": 15, "c": 20}
+resultado = {k: v for k, v in mi_diccionario.items() if v > 10}
+print(resultado)
+
+# 56
+print('\nEjercicio 56\n')
+numeros = [1, 2, 3, 4]
+producto = 1
+
+for numero in numeros:
+    producto *= numero
+
+print(producto)
+
+
+# 57
+print('\nEjercicio 57\n')
+def maximo(lista):
+    return max(lista)
+
+print(maximo([1, 2, 3]))
+
+# 58
+print('\nEjercicio 58\n')
+cadena = "Hola"
+for char in cadena:
+    print(char)
+
+
+# 59
+print('\nEjercicio 59\n')
+numeros = [10, 20, 30]
+suma_total = sum(numeros)
+print(suma_total > 50)
+
+# 60
+print('\nEjercicio 60\n')
+def contar_consonantes(texto):
+    return sum(1 for char in texto.lower() if char.isalpha() and char not in "aeiou")
+
+print(contar_consonantes("Hola"))
+
+# 61
+print('\nEjercicio 61\n')
+numeros = [5, 1, 3, 4, 2]
+segundo_mayor = sorted(set(numeros))[-2]
+print(segundo_mayor)
+
+# 62
+print('\nEjercicio 62\n')
+palabras = ["mesa", "silla", "ventana", "puerta"]
+contador_con_e = sum(1 for palabra in palabras if 'e' in palabra)
+print(contador_con_e)
+
+# 63
+print('\nEjercicio 63\n')
+numeros = [1, 2, 2, 3, 4, 4, 5]
+numeros_unicos = list(set(numeros))
+print(numeros_unicos)
+
+# 64
+print('\nEjercicio 64\n')
+def duplicados(lista):
+    return list(set([x for x in lista if lista.count(x) > 1]))
+
+print(duplicados([1, 2, 2, 3]))
+
 
