@@ -1,0 +1,276 @@
+#1
+a = -5
+b = 15
+
+c = (b + a)
+print(c)
+
+print('Ejercicio 1')
+#2
+cadena1 = "Python"
+cadena2 = "Rocks"
+
+print (f'{cadena1}  {cadena2}')
+
+
+#3
+
+base = 8
+altura = 3
+
+fin = (base*altura)
+
+print(fin)
+
+
+#4
+val = 7
+
+if val % 2 == 0:
+        print(f'par: {val}')
+else:
+        print(f'impar: {val}')
+
+
+#5
+fact = 3
+total = 1
+for element in range(fact,1,-1):
+    total *= element
+print('-',total)
+
+
+
+#6
+
+lista = [10, 23, 36, 41, 29]
+
+print(max(lista))
+
+
+#7
+
+celsius = 0
+
+fin = (celsius*1.8) + 32
+print(fin)
+
+
+#8
+
+num = 10
+
+
+if num == 10:
+    es_primo = num > 1 and all(num % i != 0 for i in range(2, int(num**0.5) + 1))
+    print(f"{num} true" if es_primo else f"{num} false")
+else:
+    print("El número no es 10")
+
+
+#9
+cadena = "abracadabra"
+caracter = "a"
+
+contador = cadena.count(caracter)
+
+print(contador)
+
+
+#10
+
+lista = [10, 20, 30, 40, 50]
+print(sum(lista))
+
+#11
+
+inicio = 5
+fin = 15
+
+
+junt = []
+for i in range(inicio, fin):
+    if i % 2 == 0:  # Verifica si el número es par
+        junt.append(i)
+        print(junt)
+
+
+#12
+
+
+lista = [10, 20, 30]
+
+print(sum(lista)/3)
+
+#13
+
+
+cadena = "Hola Mundo"
+cadenaInvertida = cadena[::-1]
+print(cadenaInvertida)
+
+#14
+
+lista = [-5, 0, 5, 10]
+print(min(lista))
+
+
+#15
+palabra = "python"
+if palabra==palabra[::-1]:
+  print(True)
+else:
+  print(False)
+
+#16
+oracion = "Python es genial"
+print(len(oracion.split()))
+
+#17
+
+base = 5
+exponente = 2
+
+print(base**exponente)
+
+#18
+kilometros = 10
+print(kilometros/1.609)
+
+#19
+
+lista = [6, 7, 8]
+
+arr = []
+for i in lista:
+    i = i*i
+    arr.append(i)
+print(arr)
+
+
+#20
+lista = [10, 9, 8, 7]
+
+print("**",sorted(lista))
+
+#21
+j= 0
+lista = [10, 20, 30]
+
+for i in lista:
+    j = j + 1
+print(j)
+
+
+#22
+
+numero = 5678
+suma = 0  
+
+
+for i in str(numero):
+    suma +=  int(i)
+
+print(suma)  
+
+
+#23
+
+cadena = "python"
+
+print(cadena.upper())
+
+#24
+
+lista = [10, 10, 20, 30, 30, 40]
+sin =list(set(lista))
+print(sin)
+
+#25
+
+cadena = "python"
+
+adena = "python"
+
+vocales = "aeiou"
+
+
+contador_vocales = 0
+for caracter in cadena:
+    if caracter.lower() in vocales:
+        contador_vocales += 1
+
+print(contador_vocales)
+
+
+#26
+
+n = 5  
+
+
+fibonacci = [0, 1]
+
+
+for i in range(2, n):  
+    siguiente = fibonacci[-1] + fibonacci[-2]
+    fibonacci.append(siguiente)
+
+
+print(fibonacci[:n])
+
+
+#27
+cadena = " python es genial "
+cadena_sin_espacios = cadena.replace(" ", "")
+print(cadena_sin_espacios)
+
+
+#28
+inicio = 1
+fin = 20
+
+cantidad_impares = 0
+for i in range(inicio, fin + 1):
+    if i % 2 != 0:
+        cantidad_impares += 1
+
+print(cantidad_impares)
+
+
+#29
+
+diccionario = {"a": 1, "b": 2, "c": 3}
+
+# Invertir el diccionario
+diccionario_invertido = {valor: clave for clave, valor in diccionario.items()}
+
+print(diccionario_invertido)
+
+
+#30
+lista = [10, 20, 30]
+longitud = len(lista)
+print(longitud)
+
+
+#31
+
+diccionario = {10: "x", 20: "y", 30: "z"}
+
+fin = sum(diccionario.keys())
+
+print(fin)
+
+
+#32
+
+lista = ["hola", "mundo"]
+
+lista_mayusculas = []
+for cadena in lista:
+    lista_mayusculas.append(cadena.upper())
+
+print(lista_mayusculas)
+
+
+
